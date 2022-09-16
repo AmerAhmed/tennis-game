@@ -1,4 +1,4 @@
-"""This is a tennis game version v0.0.1
+"""This is a tennis game version 0.0.1
 It has two classes TennisGam1 and TennisGame2.
 wit different methods
 
@@ -107,6 +107,12 @@ class TennisGame2:
         self.p2points = 0
 
     def won_point(self, playerName):
+        """
+        won_point function har one parameter playName
+
+        Args:
+            playerName (String)
+        """
         if playerName == self.player1Name:
             self.P1Score()
         else:
