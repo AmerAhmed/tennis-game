@@ -9,7 +9,7 @@ wit different methods
 
 class TennisGame1:
     """A class Tennisgame1 used to represent a tennisGame1 two methods
-    and it returns value """
+    ,and it returns value """
 
     def __init__(self, player1Name, player2Name):
         """

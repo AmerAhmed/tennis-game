@@ -4,20 +4,18 @@
 class TennisGame:
     """A class Tennis_game used to represent a tennisGame1 two methods"""
 
-    def __init__(self, player1_name, player2_name):
+    def __init__(self, player_name: str, points: int = 0) -> None:
         """
             __init__ takes two parameters player1_name and player2_name
 
             Args:
-                player1_name: string
+                player_name: string
                            The name of player1
-                player2_name: string
-                           The name of player2
+                    points:
+                           The player points
         """
-        self.player1_name = player1_name
-        self.player2_name = player2_name
-        self.player1_points = 0
-        self.player2_points = 0
+        self.player_name = player_name
+        self.points = points
 
     def won_point(self, player_name: str) -> str:
         """
@@ -32,7 +30,7 @@ class TennisGame:
             self.player2_points += 1
         return player_name
 
-
+    @property
     def score(self):
         """
         score function takes care of player's score
@@ -74,15 +72,12 @@ class TennisGame:
         return result
 
 
-
-
 player1 = TennisGame('Ahmed', 'Amer')
 player2 = TennisGame('Adam', 'Ali')
-
 
 print(player1.won_point('Amer'))
 print(player2.won_point('Ahmed'))
 
-print(player1.score())
+print(player1.score)
 
-print(player2.score())
+print(player2.score)
